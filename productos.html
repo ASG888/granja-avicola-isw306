@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Solicitud - Granja Avícola 5 POINTS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="encabezado-principal">
+        <div class="contenedor-header">
+            <img src="logo.png" alt="Logo Granja Avícola Cylicomtech" class="logo-sitio">
+            <div>
+                <h1>Productos Avícolas</h1>
+                <p class="subtitulo">Catálogo de producción y maqueta de solicitud</p>
+            </div>
+        </div>
+        <nav aria-label="Navegación principal">
+            <ul class="lista-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos y Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="tarjeta">
+            <h2>Productos disponibles en granja</h2>
+            <ul class="lista-productos">
+                <li><strong>Cartones de huevos</strong> &mdash; Producción fresca diaria por unidad o cartón.</li>
+                <li><strong>Aves</strong> &mdash; Lotes seleccionados según etapa y disponibilidad.</li>
+                <li><strong>Gallinaza</strong> &mdash; Subproducto orgánico aprovechable para suelos y cultivos.</li>
+            </ul>
+            <p class="accion-enlace">
+                Volver a la <a href="index.html">página de bienvenida</a>.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Formulario de consulta / pedido (maquetado)</h2>
+            <form id="formulario-pedido" action="#" method="get">
+                <div class="campo-form">
+                    <label for="nombre-cliente">Nombre o cliente:</label>
+                    <input type="text" id="nombre-cliente" name="nombre-cliente" placeholder="Ej. Cliente Genérico o nombre">
+                </div>
+
+                <div class="campo-form">
+                    <label for="tipo-producto">Producto de interés:</label>
+                    <select id="tipo-producto" name="tipo-producto">
+                        <option value="">Seleccione una opción</option>
+                        <option value="huevos">Cartones de huevos</option>
+                        <option value="aves">Aves</option>
+                        <option value="gallinaza">Gallinaza</option>
+                    </select>
+                </div>
+
+                <div class="campo-form">
+                    <label for="cantidad-estimada">Cantidad estimada:</label>
+                    <input type="number" id="cantidad-estimada" name="cantidad-estimada" min="1" placeholder="0">
+                </div>
+
+                <div class="campo-form">
+                    <label for="notas-adicionales">Observaciones:</label>
+                    <textarea id="notas-adicionales" name="notas-adicionales" rows="3" placeholder="Detalles adicionales..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="pie-pagina">
+        <p>Granja Avícola 5 POINTS &mdash; Asignatura Desarrollo de Aplicaciones Web (ISW-306)</p>
+    </footer>
+</body>

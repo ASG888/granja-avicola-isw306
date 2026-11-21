@@ -1,0 +1,165 @@
+/* Selectores de etiqueta */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f2;
+    color: #1f2d24;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #1e4620;
+}
+
+a {
+    color: #2e6f2d;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #b45309;
+}
+
+/* Selectores de ID */
+#encabezado-principal {
+    background-color: #1e4620;
+    color: #ffffff;
+    padding: 20px;
+    border-bottom: 4px solid #d97706;
+}
+
+#encabezado-principal h1 {
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+#contenido-principal {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+#formulario-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#pie-pagina {
+    text-align: center;
+    padding: 18px;
+    margin-top: 32px;
+    background-color: #e6ede2;
+    color: #3b4d40;
+    font-size: 0.9rem;
+    border-top: 1px solid #cdd9c6;
+}
+
+/* Selectores de clase */
+.contenedor-header {
+    max-width: 900px;
+    margin: 0 auto 12px auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-sitio {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 4px;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #dcead9;
+    font-size: 0.95rem;
+}
+
+.lista-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    gap: 16px;
+}
+
+.lista-nav a {
+    color: #fef3c7;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.lista-nav a:hover {
+    background-color: #d97706;
+    color: #ffffff;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #d7e2d3;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(30, 70, 32, 0.06);
+}
+
+.lista-caracteristicas,
+.lista-productos {
+    padding-left: 20px;
+}
+
+.lista-caracteristicas li,
+.lista-productos li {
+    margin-bottom: 8px;
+}
+
+.accion-enlace {
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-form label {
+    font-weight: 600;
+    color: #26382c;
+}
+
+.campo-form input,
+.campo-form select,
+.campo-form textarea {
+    padding: 9px 11px;
+    border: 1px solid #b8c7b5;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fcfdfb;
+}
+
+.btn-enviar {
+    align-self: flex-start;
+    background-color: #2e6f2d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #1e4620;
+}
